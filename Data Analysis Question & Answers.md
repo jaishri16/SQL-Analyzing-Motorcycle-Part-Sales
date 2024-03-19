@@ -1,6 +1,5 @@
 
-
-
+How can we retrieve wholesale revenue data for motorcycle parts categorized by product line, with months displayed as 'June', 'July', and 'August', along with warehouse information, and net revenue calculated based on a payment fee deduction?
 ```
 WITH s AS (
     SELECT
@@ -30,7 +29,7 @@ ORDER BY
     product_line, month, warehouse DESC;
 ```
 RESULT:
-
+10 ows affected.
 | product_line     | month  | warehouse | net_revenue |
 |------------------|--------|-----------|-------------|
 | Breaking system  | August | West      | 2475.71     |
